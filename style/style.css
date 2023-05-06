@@ -1,0 +1,197 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E5E5E5;
+    margin: 0%;
+}
+
+section {
+    margin: 100px;
+}
+
+/* CSS variable */
+:root {
+    --color: rgb(255, 255, 255);
+    --heading-color: #562EFF;
+    --font-wight: 600;
+    --font-size: 22px;
+    --gap: 30px;
+}
+
+h2 {
+    color: var(--heading-color);
+}
+
+/* Nav Section  */
+/* Minu section */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    font-size: 1em;
+    background-color: #562EFF;
+    color: var(--color);
+    font-weight: 500;
+}
+
+.site-name {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.site-name img {
+    width: 10%;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: var(--color);
+}
+
+/* Top Player Section  */
+/* Top Player Section  */
+.container {
+    background-color: var(--color);
+    padding: 50px;
+    border-radius: 10px;
+    margin: 30px 100px;
+}
+
+.top-player {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.top-player img {
+    width: 20%;
+    margin-right: 30px;
+}
+
+.player {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: var(--font-size);
+}
+
+.player h4 {
+    font-weight: var(--font-wight);
+}
+
+/* Horizontal Line Devided Two Section  */
+hr {
+    margin: 40px 0px;
+}
+
+/* Top Blog Section  */
+/* Top Blog Section  */
+.top-blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+}
+
+.blog {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.top-blog img {
+    width: 30%;
+    margin-right: 30px;
+}
+
+.blog a {
+    text-decoration: none;
+}
+
+
+/*  */
+.latescourse {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.latescourse h3 {
+    margin: 8px 0px;
+}
+
+.course {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 0px 15px rgb(214, 214, 214);
+}
+
+.course img {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.fa-star,
+.fa-star-half-stroke {
+    color: gold;
+}
+
+.time {
+    background-color: #FFE4E8;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: var(--font-wight);
+    color: #ED6B4F;
+}
+
+.course a {
+    text-decoration: none;
+    color: #ED6B4F;
+}
+
+.course-text {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+/* Responsive Media Quiry */
+@media screen and (max-width: 576px) {
+    .top-player {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top-blog {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .latescourse {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .top-player {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .top-blog {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .latescourse {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
